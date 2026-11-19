@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>hitilafu kicks</title>
+    <!--Links your css styling file to this HTML page-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Hitilafu Kicks</h1>
+        <p>Find your next favorite pair.</p>
+      </div>
+      <!--cart button in Header-->
+      <button id="cart-btn" class="Cart-btn">
+        🛒 cart (<span id="cart-count">0</span>)
+      </button>
+    </header>
+
+    <!--search & filter controls-->
+    <div class="controls-container">
+      <input
+        type="text"
+        id="search-input"
+        placeholder="search shoes by name..."
+      />
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="air max">air max</button>
+        <button class="filter-btn" data-filter="shox">shox</button>
+        <button class="filter-btn" data-filter="tn">tn</button>
+        <button class="filter-btn" data-filter="jordan">jordan</button>
+        <button class="filter-btn" data-filter="clogs">clogs</button>
+        <button class="filter-btn" data-filter="air force">air force</button>
+      </div>
+    </div>
+
+    <main class="shoe-grid">
+      <!--shoe-card 1-->
+      <div
+        class="shoe-card"
+        data-category="jordan"
+        data-description="Classic design with modern comfort."
+      >
+        sizes 6,7,8, 9, 10
+        <img
+          src="images/Air Jordan 6 Retro 'Infrared' 2019.jpg"
+          width="300"
+          height="300"
+          alt="Air Jordan 6 Retro 'Infrared' 2019"
+        />
+        <h2>Air Jordan 6 Retro 'Infrared' 2019</h2>
+        <p>Classic design with modern comfort.</p>
+        <p>price 3000</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 2-->
+      <div
+        class="shoe-card"
+        data-category="air max"
+        data-description="Comfortable and stylish for everyday wear."
+      >
+        sizes 7, 8, 9, 10
+        <img
+          src="images/Air max 95.jpg"
+          width="300"
+          height="300"
+          alt="Air Max 95"
+        />
+        <h2>Air Max 95</h2>
+        <p>Comfortable and stylish for everyday wear.</p>
+        <p>price 2500</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 3-->
+      <div
+        class="shoe-card"
+        data-category="air max"
+        data-description="Iconic design with superior cushioning."
+      >
+        sizes 6,7,8, 9, 10
+        <img
+          src="images/Air Max 97.jpg"
+          width="300"
+          height="300"
+          alt="Air Max 97"
+        />
+        <h2>Nike Air Max 97</h2>
+        <p>Iconic design with superior cushioning.</p>
+        <p>price 2500</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 4-->
+      <div
+        class="shoe-card"
+        data-category="air max"
+        data-description="Timeless design with iconic air cushioning."
+      >
+        sizes 6,7,8, 9, 10
+        <img src="images/air max.jpg" width="300" height="300" alt="air max" />
+        <h2>Air Max 95</h2>
+        <p>Timeless design with iconic air cushioning.</p>
+        <p>price 2500</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 5-->
+      <div
+        class="shoe-card"
+        data-category="shox"
+        data-description="Modern design with iconic air cushioning."
+      >
+        sizes 6,7,8, 9, 10
+        <img src="images/shox.jpg" width="300" height="300" alt="Shox" />
+        <h2>Shox</h2>
+        <p>Modern design with iconic air cushioning.</p>
+        <p>price 4000</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 6-->
+      <div
+        class="shoe-card"
+        data-category="clogs"
+        data-description="Classic design with modern comfort."
+      >
+        sizes 6,7,8, 9, 10
+        <img src="images/clogs.jpg" width="300" height="300" alt="Clogs" />
+        <h2>Clogs</h2>
+        <p>Classic design with modern comfort.</p>
+        <p>price 1200</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 7-->
+      <div
+        class="shoe-card"
+        data-category="air force"
+        data-description="Iconic design with superior cushioning."
+      >
+        sizes 6,7,8, 9, 10
+        <img
+          src="images/Nike Air Force 1.jpg"
+          width="300"
+          height="300"
+          alt="Nike Air Force 1"
+        />
+        <h2>Nike Air Force 1</h2>
+        <p>Iconic design with superior cushioning.</p>
+        <p>price 1200</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 8-->
+      <div
+        class="shoe-card"
+        data-category="jordan"
+        data-description="Modern design with iconic air cushioning."
+      >
+        sizes 6,7,8, 9, 10
+        <img
+          src="images/tn customized.jpg"
+          width="300"
+          height="300"
+          alt="tn customized"
+        />
+        <h2>tn customized</h2>
+        <p>Modern design with iconic air cushioning.</p>
+        <p>price 2800</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 9-->
+      <div
+        class="shoe-card"
+        data-category="shox"
+        data-description="Classic design with modern comfort."
+      >
+        sizes 6,7,8, 9, 10
+        <img
+          src="images/Nike shox (2).jpg"
+          width="300"
+          height="300"
+          alt="Nike Shox"
+        />
+        <h2>Nike Shox</h2>
+        <p>Classic design with modern comfort.</p>
+        <p>price 4000</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <!--shoe-card 10-->
+      <div
+        class="shoe-card"
+        data-category="shox"
+        data-description="Comfortable and stylish for everyday wear."
+      >
+        sizes 6,7,8, 9, 10
+        <img
+          src="images/nike shox.jpg"
+          width="300"
+          height="300"
+          alt="Nike Shox"
+        />
+        <h2>Nike Shox</h2>
+        <p>Comfortable and stylish for everyday wear.</p>
+        <p>price 4500</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 11-->
+      <div
+        class="shoe-card"
+        data-category="tn"
+        data-description="Iconic design with superior cushioning."
+      >
+        sizes 6,7,8, 9, 10
+        <img
+          src="images/nike tn black.jpg"
+          width="300"
+          height="300"
+          alt="Nike tn Black"
+        />
+        <h2>Nike TN Black</h2>
+        <p>Iconic design with superior cushioning.</p>
+        <p>price 2500</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 12-->
+      <div
+        class="shoe-card"
+        data-category="tn"
+        data-description="Modern design with iconic air cushioning."
+      >
+        sizes 6,7,8, 9, 10
+        <img src="images/nike tn.jpg" width="300" height="300" alt="Nike TN" />
+        <h2>Nike TN</h2>
+        <p>Modern design with iconic air cushioning.</p>
+        <p>price 2500</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 13-->
+      <div
+        class="shoe-card"
+        data-category="air max"
+        data-description="Classic design with modern comfort."
+      >
+        sizes 6,7,8, 9, 10
+        <img
+          src="images/Nike Air Max.jpg"
+          width="300"
+          height="300"
+          alt="Nike Air Max"
+        />
+        <h2>Nike Air Max</h2>
+        <p>Classic design with modern comfort.</p>
+        <p>price 2500</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 14-->
+      <div
+        class="shoe-card"
+        data-category="tn"
+        data-description="Modern design with iconic air cushioning."
+      >
+        sizes 6,7,8, 9, 10
+        <img
+          src="images/Nike TN (2).jpg"
+          width="300"
+          height="300"
+          alt="Nike TN (2)"
+        />
+        <h2>Nike TN (2)</h2>
+        <p>Modern design with iconic air cushioning.</p>
+        <p>price 2500</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 15-->
+      <div
+        class="shoe-card"
+        data-category="jordan"
+        data-description="Classic design with modern comfort."
+      >
+        sizes 6,7,8, 9, 10
+        <img
+          src="images/Jordan 11.jpg"
+          width="300"
+          height="300"
+          alt="Jordan 11"
+        />
+        <h2>Jordan 11</h2>
+        <p>Classic design with modern comfort.</p>
+        <p>price 3500</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 16-->
+      <div
+        class="shoe-card"
+        data-category="jordan"
+        data-description="Modern design with iconic air cushioning."
+      >
+        sizes 6,7,8, 9, 10
+        <img
+          src="images/Air Jordan 11 Air….jpg"
+          width="300"
+          height="300"
+          alt="Air Jordan 11 Air…"
+        />
+        <h2>Air Jordan 11 Air…</h2>
+        <p>Modern design with iconic air cushioning.</p>
+        <p>price 3500</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 17-->
+      <div
+        class="shoe-card"
+        data-category="air force"
+        data-description="Classic design with modern comfort."
+      >
+        sizes 6,7,8, 9, 10
+        <img
+          src="images/Air Force 1 '07 sneakers Men.jpg"
+          width="300"
+          height="300"
+          alt="Air Force 1 '07 sneakers Men"
+        />
+        <h2>Air Force 1 '07 sneakers Men</h2>
+        <p>Classic design with modern comfort.</p>
+        <p>price 1500</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 18-->
+      <div
+        class="shoe-card"
+        data-category="jordan"
+        data-description="Modern design with iconic air cushioning."
+      >
+        sizes 6,7,8, 9, 10
+        <img
+          src="images/Jordan 11 red.jpg"
+          width="300"
+          height="300"
+          alt="Jordan 11 Red"
+        />
+        <h2>Jordan 11 Red</h2>
+        <p>Modern design with iconic air cushioning.</p>
+        <p>price 3500</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 19-->
+      <div
+        class="shoe-card"
+        data-category="jordan"
+        data-description="Classic design with modern comfort."
+      >
+        sizes 6,7,8, 9, 10
+        <img
+          src="images/Jordan 11 black.jpg"
+          width="300"
+          height="300"
+          alt="Jordan 11 Black"
+        />
+        <h2>Jordan 11 Black</h2>
+        <p>Classic design with modern comfort.</p>
+        <p>price 1500</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 20-->
+      <div
+        class="shoe-card"
+        data-category="shox"
+        data-description="Modern design with iconic air cushioning."
+      >
+        sizes 6,7,8, 9, 10
+        <img
+          src="images/Nike shox black.jpg"
+          width="300"
+          height="300"
+          alt="Nike Shox Black"
+        />
+        <h2>Nike Shox Black</h2>
+        <p>Modern design with iconic air cushioning.</p>
+        <p>price 4500</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 21-->
+      <div
+        class="shoe-card"
+        data-category="air force"
+        data-description="Classic design with modern comfort."
+      >
+        sizes 6,7,8, 9, 10
+        <img
+          src="images/Air Force 1 '07 sneakers Men.jpg"
+          width="300"
+          height="300"
+          alt="Air Force 1 '07 sneakers Men"
+        />
+        <h2>Air Force 1 '07 sneakers Men</h2>
+        <p>Classic design with modern comfort.</p>
+        <p>price 1500</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <!--shoe-card 22-->
+      <div
+        class="shoe-card"
+        data-category="jordan"
+        data-description="Modern design with iconic air cushioning."
+      >
+        sizes 6,7,8, 9, 10
+        <img
+          src="images/jordan 9.jpg"
+          width="300"
+          height="300"
+          alt="jordan 9"
+        />
+        <h2>jordan 9</h2>
+        <p>Modern design with iconic air cushioning.</p>
+        <p>price 3000</p>
+        <button type="button" class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </main>
+    <!--pop-up modal(hidden by default)-->
+    <div id="shoe-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <img id="modal-image" src="" alt="Selected Shoe" />
+        <h2 id="modal-title">shoe name</h2>
+        <p id="modal-category" class="category">category</p>
+        <p id="modal-description" class="description">shoe description</p>
+        <p class="sizes">
+          <strong>Available Sizes:</strong> <span id="modal-sizes">sizes</span>
+        </p>
+        <p id="modal-price" class="price">price</p>
+        <button id="modal-add-to-cart" class="add-to-cart-btn">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+    <!-- Link your JavaScript file  -->
+    <script src="script.js"></script>
+    `
+  </body>
+</html>
+
+<!-- Cart Modal (Hidden by default) -->
+<div id="cart-modal" class="modal">
+  <div class="modal-content cart-modal-content">
+    <span class="close-cart-btn">&times;</span>
+    <h2>Your Shopping Cart</h2>
+    <div id="cart-items-container">
+      <p class="empty-cart-msg">Your cart is empty.</p>
+    </div>
+    <div class="cart-total-section">
+      <h3>Total: <span id="cart-total-price">$0.00</span></h3>
+      <button id="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+</div>
